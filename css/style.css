@@ -167,3 +167,21 @@ footer {
 }
 
 
+.cell {
+  position: relative;
+  width: 20px;
+  margin: 0 2px;
+  background: #4cafef;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.cell-label {
+  position: absolute;
+  bottom: -20px; /* shows number below the bar */
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+}

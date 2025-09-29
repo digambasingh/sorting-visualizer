@@ -24,19 +24,26 @@ const RenderScreen = async () => {
   await RenderList();
 };
 
+
 const RenderList = async () => {
   let sizeValue = Number(document.querySelector(".size-menu").value);
   await clearScreen();
 
   let list = await randomList(sizeValue);
   const arrayNode = document.querySelector(".array");
-  console.log(arrayNode);
-  console.log(list);
+
   for (const element of list) {
     const node = document.createElement("div");
     node.className = "cell";
     node.setAttribute("value", String(element));
     node.style.height = `${3.8 * element}px`;
+
+    // Show the number inside each bar
+    const label = document.createElement("span");
+    label.className = "cell-label";
+    label.innerText = element;
+
+    node.appendChild(label);
     arrayNode.appendChild(node);
   }
 };
