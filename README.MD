@@ -4,7 +4,7 @@ This is a web application built using HTML, CSS, Javascript to visualize classic
 
 **Live-** [sorting visualizer](https://sortingviz.vercel.app/) 
 
-**Code-** [sort visualizer code]()
+**Code-** [sort visualizer code](https://github.com/digambasingh/sorting-visualizer/tree/main)
 
 ## Purpose
 
