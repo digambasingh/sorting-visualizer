@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Sorting Visualizer</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="nav-container">
+    <h2 class="title" onclick="window.location.reload()">
+      Sorting Visualizer
+    </h2>
+    <div class="navbar" id="navbar">
+      <a id="random" onclick="RenderScreen()" class="btn">Generate Array</a>
+
+      <!-- Algorithm Menu -->
+      <span class="options">
+        <select id="menu" class="algo-menu">
+          <option value="0">Choose Algorithm</option>
+          <option value="1">Bubble Sort</option>
+          <option value="2">Selection Sort</option>
+          <option value="3">Insertion Sort</option>
+          <option value="4">Merge Sort</option>
+          <option value="5">Quick Sort</option>
+        </select>
+      </span>
+
+      <!-- Array Size Menu -->
+      <span class="options">
+        <select id="menu" class="size-menu">
+          <option value="0">Array Size</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+          <option value="60">60</option>
+          <option value="70">70</option>
+          <option value="80">80</option>
+          <option value="90">90</option>
+          <option value="100">100</option>
+        </select>
+      </span>
+
+      <!-- Speed Menu -->
+      <span class="options">
+        <select id="menu" class="speed-menu">
+          <option value="0">Speed</option>
+          <option value="0.5">0.50x</option>
+          <option value="0.75">0.75x</option>
+          <option value="1">1.00x</option>
+          <option value="2">2.00x</option>
+          <option value="4">4.00x</option>
+        </select>
+      </span>
+
+      <!-- Start Button -->
+      <a class="start btn">Start Sorting</a>
+
+      <!-- Responsive Menu Icon -->
+      <a class="icon"><i class="fa fa-bars"></i></a>
+    </div>
+  </div>
+
+  <!-- Visualization Container -->
+  <main class="center">
+    <div class="array"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Created with <i class="fa fa-heart"></i> by <strong>Digambar Singh</strong> | All rights reserved © 2025</p>
+    <p>
+      <a href="https://www.linkedin.com/in/digambar-singh-969878250/" target="_blank" class="link">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/digambasingh" target="_blank" class="link">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/helper.js"></script>
+  <script src="./scripts/sort-algorithms.js"></script>
+</body>
+
+</html>
